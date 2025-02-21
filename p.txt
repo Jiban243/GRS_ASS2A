@@ -1,0 +1,437 @@
+==== Profiling cpu_bound ====
+Running cpu_bound with 2 threads...
+Execution Time: 0.193760 seconds with 2 threads
+Execution Time: 0.170967 seconds with 2 threads
+Execution Time: 0.165894 seconds with 2 threads
+Execution Time: 0.177926 seconds with 2 threads
+Execution Time: 0.174952 seconds with 2 threads
+
+ Performance counter stats for './cpu_bound 2' (5 runs):
+
+       474,059,325      cycles                                                                  ( +-  2.65% )
+     1,087,950,163      instructions                     #    2.29  insn per cycle              ( +-  0.01% )
+        13,868,908      cache-references                                                        ( +-  1.43% )
+           313,465      cache-misses                     #    2.26% of all cache refs           ( +- 15.54% )
+                 6      context-switches                                                        ( +-  9.72% )
+                 1      cpu-migrations                                                          ( +- 87.18% )
+
+           0.10793 +- 0.00390 seconds time elapsed  ( +-  3.61% )
+
+Running cpu_bound with 4 threads...
+Execution Time: 0.221580 seconds with 4 threads
+Execution Time: 0.249273 seconds with 4 threads
+Execution Time: 0.202831 seconds with 4 threads
+Execution Time: 0.227222 seconds with 4 threads
+Execution Time: 0.294209 seconds with 4 threads
+
+ Performance counter stats for './cpu_bound 4' (5 runs):
+
+       580,860,778      cycles                                                                  ( +-  5.01% )
+     1,089,334,054      instructions                     #    1.88  insn per cycle              ( +-  0.01% )
+        16,387,504      cache-references                                                        ( +-  9.22% )
+           451,934      cache-misses                     #    2.76% of all cache refs           ( +- 15.62% )
+                13      context-switches                                                        ( +- 24.08% )
+                 1      cpu-migrations                                                          ( +- 37.42% )
+
+           0.09358 +- 0.00595 seconds time elapsed  ( +-  6.36% )
+
+Running cpu_bound with 8 threads...
+Execution Time: 0.811722 seconds with 8 threads
+Execution Time: 0.395160 seconds with 8 threads
+Execution Time: 0.313039 seconds with 8 threads
+Execution Time: 0.307350 seconds with 8 threads
+Execution Time: 0.317651 seconds with 8 threads
+
+ Performance counter stats for './cpu_bound 8' (5 runs):
+
+       799,391,371      cycles                                                                  ( +-  0.75% )
+     1,085,522,725      instructions                     #    1.36  insn per cycle              ( +-  0.05% )
+        24,329,926      cache-references                                                        ( +-  3.81% )
+           668,783      cache-misses                     #    2.75% of all cache refs           ( +-  5.04% )
+               105      context-switches                                                        ( +-  6.06% )
+                11      cpu-migrations                                                          ( +- 10.98% )
+
+            0.1104 +- 0.0228 seconds time elapsed  ( +- 20.61% )
+
+Running cpu_bound with 10 threads...
+Execution Time: 0.321014 seconds with 10 threads
+Execution Time: 0.323546 seconds with 10 threads
+Execution Time: 0.331500 seconds with 10 threads
+Execution Time: 0.320024 seconds with 10 threads
+Execution Time: 0.320857 seconds with 10 threads
+
+ Performance counter stats for './cpu_bound 10' (5 runs):
+
+       825,651,775      cycles                                                                  ( +-  0.56% )
+     1,094,050,497      instructions                     #    1.33  insn per cycle              ( +-  0.02% )
+        26,437,503      cache-references                                                        ( +-  3.20% )
+           588,366      cache-misses                     #    2.23% of all cache refs           ( +-  4.39% )
+               135      context-switches                                                        ( +-  3.32% )
+                22      cpu-migrations                                                          ( +-  7.19% )
+
+           0.07050 +- 0.00122 seconds time elapsed  ( +-  1.72% )
+
+Running cpu_bound with 50 threads...
+Execution Time: 0.319623 seconds with 50 threads
+Execution Time: 0.325268 seconds with 50 threads
+Execution Time: 0.317960 seconds with 50 threads
+Execution Time: 0.318218 seconds with 50 threads
+Execution Time: 0.326061 seconds with 50 threads
+
+ Performance counter stats for './cpu_bound 50' (5 runs):
+
+       864,335,025      cycles                                                                  ( +-  0.54% )
+     1,105,959,098      instructions                     #    1.28  insn per cycle              ( +-  0.02% )
+        29,067,153      cache-references                                                        ( +-  3.04% )
+           608,559      cache-misses                     #    2.09% of all cache refs           ( +-  5.53% )
+               175      context-switches                                                        ( +-  3.84% )
+                72      cpu-migrations                                                          ( +-  3.87% )
+
+           0.06451 +- 0.00131 seconds time elapsed  ( +-  2.04% )
+
+Running cpu_bound with 100 threads...
+Execution Time: 0.300305 seconds with 100 threads
+Execution Time: 0.332948 seconds with 100 threads
+Execution Time: 0.327241 seconds with 100 threads
+Execution Time: 0.319270 seconds with 100 threads
+Execution Time: 0.285753 seconds with 100 threads
+
+ Performance counter stats for './cpu_bound 100' (5 runs):
+
+       875,079,155      cycles                                                                  ( +-  0.46% )
+     1,120,724,988      instructions                     #    1.28  insn per cycle              ( +-  0.05% )
+        29,916,659      cache-references                                                        ( +-  2.11% )
+           814,209      cache-misses                     #    2.72% of all cache refs           ( +-  2.47% )
+               203      context-switches                                                        ( +- 12.75% )
+               110      cpu-migrations                                                          ( +- 20.39% )
+
+          0.066883 +- 0.000963 seconds time elapsed  ( +-  1.44% )
+
+==== Profiling memory_bound ====
+Running memory_bound with 2 threads...
+Execution Time with 2 threads: 7.889237 seconds
+Execution Time with 2 threads: 7.864245 seconds
+Execution Time with 2 threads: 6.954425 seconds
+Execution Time with 2 threads: 7.473966 seconds
+Execution Time with 2 threads: 6.904217 seconds
+
+ Performance counter stats for './memory_bound 2' (5 runs):
+
+    18,951,413,036      cycles                                                                  ( +-  2.55% )
+    23,059,484,842      instructions                     #    1.22  insn per cycle              ( +-  0.02% )
+     1,048,648,221      cache-references                                                        ( +-  0.21% )
+       807,516,046      cache-misses                     #   77.01% of all cache refs           ( +-  0.40% )
+               150      context-switches                                                        ( +- 30.51% )
+                17      cpu-migrations                                                          ( +- 36.71% )
+
+             6.224 +- 0.155 seconds time elapsed  ( +-  2.49% )
+
+Running memory_bound with 4 threads...
+Execution Time with 4 threads: 15.575453 seconds
+Execution Time with 4 threads: 14.904760 seconds
+Execution Time with 4 threads: 15.184503 seconds
+Execution Time with 4 threads: 14.685241 seconds
+Execution Time with 4 threads: 14.519817 seconds
+
+ Performance counter stats for './memory_bound 4' (5 runs):
+
+    25,503,324,771      cycles                                                                  ( +-  1.02% )
+    23,105,608,670      instructions                     #    0.91  insn per cycle              ( +-  0.03% )
+       947,827,916      cache-references                                                        ( +-  0.43% )
+       846,106,286      cache-misses                     #   89.27% of all cache refs           ( +-  0.26% )
+               162      context-switches                                                        ( +- 24.14% )
+                21      cpu-migrations                                                          ( +- 17.91% )
+
+            6.1261 +- 0.0328 seconds time elapsed  ( +-  0.54% )
+
+Running memory_bound with 8 threads...
+Execution Time with 8 threads: 26.375214 seconds
+Execution Time with 8 threads: 25.227440 seconds
+Execution Time with 8 threads: 25.712238 seconds
+Execution Time with 8 threads: 26.430014 seconds
+Execution Time with 8 threads: 27.028005 seconds
+
+ Performance counter stats for './memory_bound 8' (5 runs):
+
+    38,830,414,007      cycles                                                                  ( +-  1.32% )
+    23,198,619,065      instructions                     #    0.60  insn per cycle              ( +-  0.05% )
+       934,014,271      cache-references                                                        ( +-  0.90% )
+       859,190,066      cache-misses                     #   91.99% of all cache refs           ( +-  0.35% )
+             3,352      context-switches                                                        ( +- 18.90% )
+                62      cpu-migrations                                                          ( +- 12.65% )
+
+            6.3523 +- 0.0986 seconds time elapsed  ( +-  1.55% )
+
+Running memory_bound with 10 threads...
+Execution Time with 10 threads: 27.522029 seconds
+Execution Time with 10 threads: 28.254136 seconds
+Execution Time with 10 threads: 27.220004 seconds
+Execution Time with 10 threads: 26.747871 seconds
+Execution Time with 10 threads: 26.489187 seconds
+
+ Performance counter stats for './memory_bound 10' (5 runs):
+
+    52,741,947,570      cycles                                                                  ( +-  1.06% )
+    23,213,276,942      instructions                     #    0.44  insn per cycle              ( +-  0.04% )
+       886,213,768      cache-references                                                        ( +-  0.44% )
+       833,957,801      cache-misses                     #   94.10% of all cache refs           ( +-  0.28% )
+             4,343      context-switches                                                        ( +- 11.76% )
+                97      cpu-migrations                                                          ( +-  4.80% )
+
+             5.993 +- 0.101 seconds time elapsed  ( +-  1.68% )
+
+Running memory_bound with 50 threads...
+Execution Time with 50 threads: 27.061893 seconds
+Execution Time with 50 threads: 25.823679 seconds
+Execution Time with 50 threads: 27.961970 seconds
+Execution Time with 50 threads: 26.873308 seconds
+Execution Time with 50 threads: 25.997325 seconds
+
+ Performance counter stats for './memory_bound 50' (5 runs):
+
+    52,669,467,186      cycles                                                                  ( +-  0.86% )
+    23,272,698,081      instructions                     #    0.44  insn per cycle              ( +-  0.03% )
+       901,599,413      cache-references                                                        ( +-  0.31% )
+       840,154,122      cache-misses                     #   93.18% of all cache refs           ( +-  0.28% )
+             7,881      context-switches                                                        ( +-  2.43% )
+               619      cpu-migrations                                                          ( +- 11.69% )
+
+            6.2774 +- 0.0528 seconds time elapsed  ( +-  0.84% )
+
+Running memory_bound with 100 threads...
+Execution Time with 100 threads: 25.629665 seconds
+Execution Time with 100 threads: 26.513026 seconds
+Execution Time with 100 threads: 26.251474 seconds
+Execution Time with 100 threads: 26.054586 seconds
+Execution Time with 100 threads: 26.661929 seconds
+
+ Performance counter stats for './memory_bound 100' (5 runs):
+
+    53,341,427,202      cycles                                                                  ( +-  0.53% )
+    23,272,721,760      instructions                     #    0.44  insn per cycle              ( +-  0.05% )
+       898,100,694      cache-references                                                        ( +-  0.42% )
+       821,026,207      cache-misses                     #   91.42% of all cache refs           ( +-  0.52% )
+             7,362      context-switches                                                        ( +-  4.88% )
+             1,188      cpu-migrations                                                          ( +- 11.45% )
+
+            6.4369 +- 0.0951 seconds time elapsed  ( +-  1.48% )
+
+==== Profiling io_bound ====
+Running io_bound with 2 threads...
+Execution Time with 2 threads: 0.010191 seconds
+Execution Time with 2 threads: 0.013843 seconds
+Execution Time with 2 threads: 0.013611 seconds
+Execution Time with 2 threads: 0.015536 seconds
+Execution Time with 2 threads: 0.014918 seconds
+
+ Performance counter stats for './io_bound 2' (5 runs):
+
+        21,868,228      cycles                                                                  ( +-  3.75% )
+        30,131,496      instructions                     #    1.38  insn per cycle              ( +-  0.34% )
+           584,175      cache-references                                                        ( +-  5.56% )
+           135,142      cache-misses                     #   23.13% of all cache refs           ( +-  8.10% )
+                 5      context-switches                                                        ( +- 14.70% )
+                 2      cpu-migrations                                                          ( +- 20.00% )
+
+          0.010313 +- 0.000594 seconds time elapsed  ( +-  5.76% )
+
+Running io_bound with 4 threads...
+Execution Time with 4 threads: 0.033365 seconds
+Execution Time with 4 threads: 0.031188 seconds
+Execution Time with 4 threads: 0.027695 seconds
+Execution Time with 4 threads: 0.029647 seconds
+Execution Time with 4 threads: 0.030802 seconds
+
+ Performance counter stats for './io_bound 4' (5 runs):
+
+        45,981,659      cycles                                                                  ( +-  1.62% )
+        58,802,507      instructions                     #    1.28  insn per cycle              ( +-  0.14% )
+           971,602      cache-references                                                        ( +-  5.05% )
+           138,686      cache-misses                     #   14.27% of all cache refs           ( +-  3.93% )
+                13      context-switches                                                        ( +- 11.04% )
+                 1      cpu-migrations                                                          ( +- 37.42% )
+
+          0.010825 +- 0.000238 seconds time elapsed  ( +-  2.20% )
+
+Running io_bound with 8 threads...
+Execution Time with 8 threads: 0.059684 seconds
+Execution Time with 8 threads: 0.063022 seconds
+Execution Time with 8 threads: 0.059116 seconds
+Execution Time with 8 threads: 0.060452 seconds
+Execution Time with 8 threads: 0.062086 seconds
+
+ Performance counter stats for './io_bound 8' (5 runs):
+
+        94,110,708      cycles                                                                  ( +-  0.89% )
+       116,138,640      instructions                     #    1.23  insn per cycle              ( +-  0.12% )
+         1,516,506      cache-references                                                        ( +-  2.32% )
+           242,142      cache-misses                     #   15.97% of all cache refs           ( +- 10.49% )
+                26      context-switches                                                        ( +- 10.92% )
+                 7      cpu-migrations                                                          ( +- 11.07% )
+
+           0.01950 +- 0.00197 seconds time elapsed  ( +- 10.11% )
+
+Running io_bound with 10 threads...
+Execution Time with 10 threads: 0.079085 seconds
+Execution Time with 10 threads: 0.078857 seconds
+Execution Time with 10 threads: 0.078631 seconds
+Execution Time with 10 threads: 0.075587 seconds
+Execution Time with 10 threads: 0.077290 seconds
+
+ Performance counter stats for './io_bound 10' (5 runs):
+
+       118,443,164      cycles                                                                  ( +-  0.56% )
+       145,273,341      instructions                     #    1.23  insn per cycle              ( +-  0.08% )
+         1,916,566      cache-references                                                        ( +-  1.62% )
+           300,352      cache-misses                     #   15.67% of all cache refs           ( +-  6.92% )
+                41      context-switches                                                        ( +-  8.25% )
+                 8      cpu-migrations                                                          ( +- 13.46% )
+
+           0.02420 +- 0.00128 seconds time elapsed  ( +-  5.29% )
+
+Running io_bound with 50 threads...
+Execution Time with 50 threads: 0.400812 seconds
+Execution Time with 50 threads: 0.411525 seconds
+Execution Time with 50 threads: 0.429422 seconds
+Execution Time with 50 threads: 0.427129 seconds
+Execution Time with 50 threads: 0.418802 seconds
+
+ Performance counter stats for './io_bound 50' (5 runs):
+
+       590,987,478      cycles                                                                  ( +-  0.30% )
+       728,074,763      instructions                     #    1.23  insn per cycle              ( +-  0.27% )
+         9,824,262      cache-references                                                        ( +-  0.95% )
+         1,445,540      cache-misses                     #   14.71% of all cache refs           ( +-  2.98% )
+               260      context-switches                                                        ( +-  8.23% )
+                64      cpu-migrations                                                          ( +- 16.35% )
+
+           0.10121 +- 0.00197 seconds time elapsed  ( +-  1.95% )
+
+Running io_bound with 100 threads...
+Execution Time with 100 threads: 0.814075 seconds
+Execution Time with 100 threads: 0.851811 seconds
+Execution Time with 100 threads: 0.918067 seconds
+Execution Time with 100 threads: 0.818792 seconds
+Execution Time with 100 threads: 0.811464 seconds
+
+ Performance counter stats for './io_bound 100' (5 runs):
+
+     1,185,079,257      cycles                                                                  ( +-  0.43% )
+     1,459,966,871      instructions                     #    1.23  insn per cycle              ( +-  0.21% )
+        18,989,922      cache-references                                                        ( +-  2.65% )
+         2,779,114      cache-misses                     #   14.63% of all cache refs           ( +-  8.10% )
+               534      context-switches                                                        ( +-  8.91% )
+               117      cpu-migrations                                                          ( +- 13.90% )
+
+            0.1949 +- 0.0123 seconds time elapsed  ( +-  6.30% )
+
+==== Profiling mixed_workload ====
+Running mixed_workload with 2 threads...
+Execution Time with 2 threads: 0.033346 seconds
+Execution Time with 2 threads: 0.038750 seconds
+Execution Time with 2 threads: 0.034924 seconds
+Execution Time with 2 threads: 0.034336 seconds
+Execution Time with 2 threads: 0.035101 seconds
+
+ Performance counter stats for './mixed_workload 2' (5 runs):
+
+       120,643,688      cycles                                                                  ( +-  0.68% )
+       139,841,773      instructions                     #    1.16  insn per cycle              ( +-  0.09% )
+           972,193      cache-references                                                        ( +-  7.23% )
+           307,480      cache-misses                     #   31.63% of all cache refs           ( +-  5.83% )
+                 7      context-switches                                                        ( +- 16.66% )
+                 2      cpu-migrations                                                          ( +- 27.39% )
+
+           0.05825 +- 0.00162 seconds time elapsed  ( +-  2.79% )
+
+Running mixed_workload with 4 threads...
+Execution Time with 4 threads: 0.060672 seconds
+Execution Time with 4 threads: 0.057245 seconds
+Execution Time with 4 threads: 0.045146 seconds
+Execution Time with 4 threads: 0.047192 seconds
+Execution Time with 4 threads: 0.045494 seconds
+
+ Performance counter stats for './mixed_workload 4' (5 runs):
+
+       144,387,305      cycles                                                                  ( +-  1.72% )
+       155,490,626      instructions                     #    1.08  insn per cycle              ( +-  0.14% )
+         1,476,861      cache-references                                                        ( +-  4.49% )
+           392,262      cache-misses                     #   26.56% of all cache refs           ( +-  5.43% )
+                24      context-switches                                                        ( +- 22.61% )
+                 7      cpu-migrations                                                          ( +- 22.77% )
+
+           0.06217 +- 0.00211 seconds time elapsed  ( +-  3.39% )
+
+Running mixed_workload with 8 threads...
+Execution Time with 8 threads: 0.059706 seconds
+Execution Time with 8 threads: 0.066093 seconds
+Execution Time with 8 threads: 0.057524 seconds
+Execution Time with 8 threads: 0.061534 seconds
+Execution Time with 8 threads: 0.062738 seconds
+
+ Performance counter stats for './mixed_workload 8' (5 runs):
+
+       165,472,850      cycles                                                                  ( +-  1.03% )
+       185,427,732      instructions                     #    1.12  insn per cycle              ( +-  0.14% )
+         1,920,171      cache-references                                                        ( +-  2.54% )
+           423,843      cache-misses                     #   22.07% of all cache refs           ( +-  3.38% )
+                26      context-switches                                                        ( +- 10.70% )
+                12      cpu-migrations                                                          ( +-  4.86% )
+
+           0.05374 +- 0.00157 seconds time elapsed  ( +-  2.92% )
+
+Running mixed_workload with 10 threads...
+Execution Time with 10 threads: 0.071782 seconds
+Execution Time with 10 threads: 0.074266 seconds
+Execution Time with 10 threads: 0.076558 seconds
+Execution Time with 10 threads: 0.072178 seconds
+Execution Time with 10 threads: 0.071858 seconds
+
+ Performance counter stats for './mixed_workload 10' (5 runs):
+
+       182,064,810      cycles                                                                  ( +-  0.65% )
+       201,297,876      instructions                     #    1.11  insn per cycle              ( +-  0.12% )
+         2,278,941      cache-references                                                        ( +-  3.19% )
+           466,523      cache-misses                     #   20.47% of all cache refs           ( +-  5.10% )
+                46      context-switches                                                        ( +- 20.91% )
+                20      cpu-migrations                                                          ( +- 27.90% )
+
+           0.05654 +- 0.00242 seconds time elapsed  ( +-  4.27% )
+
+Running mixed_workload with 50 threads...
+Execution Time with 50 threads: 0.234553 seconds
+Execution Time with 50 threads: 0.241935 seconds
+Execution Time with 50 threads: 0.248707 seconds
+Execution Time with 50 threads: 0.240062 seconds
+Execution Time with 50 threads: 0.248010 seconds
+
+ Performance counter stats for './mixed_workload 50' (5 runs):
+
+       440,904,025      cycles                                                                  ( +-  0.45% )
+       511,479,570      instructions                     #    1.16  insn per cycle              ( +-  0.25% )
+         8,852,740      cache-references                                                        ( +-  0.99% )
+         1,200,539      cache-misses                     #   13.56% of all cache refs           ( +-  5.01% )
+               275      context-switches                                                        ( +-  6.20% )
+                99      cpu-migrations                                                          ( +- 10.50% )
+
+           0.10404 +- 0.00493 seconds time elapsed  ( +-  4.74% )
+
+Running mixed_workload with 100 threads...
+Execution Time with 100 threads: 0.461714 seconds
+Execution Time with 100 threads: 0.475069 seconds
+Execution Time with 100 threads: 0.451456 seconds
+Execution Time with 100 threads: 0.454051 seconds
+Execution Time with 100 threads: 0.446508 seconds
+
+ Performance counter stats for './mixed_workload 100' (5 runs):
+
+       768,227,805      cycles                                                                  ( +-  0.40% )
+       902,004,483      instructions                     #    1.17  insn per cycle              ( +-  0.17% )
+        17,253,926      cache-references                                                        ( +-  0.76% )
+         1,911,575      cache-misses                     #   11.08% of all cache refs           ( +-  4.92% )
+               493      context-switches                                                        ( +-  3.11% )
+               207      cpu-migrations                                                          ( +-  2.57% )
+
+           0.14020 +- 0.00340 seconds time elapsed  ( +-  2.43% )
+
+Performance analysis completed. Check results in perf_results.
